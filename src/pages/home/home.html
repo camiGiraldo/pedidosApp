@@ -1,14 +1,15 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Inicio
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <ion-tabs selectedIndex="2">
+        <ion-tab [root]="perfilPage" tabTitle="Chat" tabIcon="chat"></ion-tab>
+        <ion-tab [root]="crearPage" tabTitle="Chat" tabIcon="chat"></ion-tab>
+        <ion-tab [root]="pedidosPage" tabTitle="Chat" tabIcon="chat"></ion-tab>
+    </ion-tabs>
 </ion-content>

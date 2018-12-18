@@ -1,3 +1,6 @@
+import { PedidosPage } from './../pages/pedidos/pedidos';
+import { CrearPage } from './../pages/crear/crear';
+import { PerfilPage } from './../pages/perfil/perfil';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -6,11 +9,16 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { LoginPage } from '../pages/login/login';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    PerfilPage,
+    CrearPage,
+    PedidosPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +27,11 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    PerfilPage,
+    CrearPage,
+    PedidosPage
   ],
   providers: [
     StatusBar,
